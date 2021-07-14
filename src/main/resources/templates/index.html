@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru-RU" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+  <head>
+    <div th:insert="header.html"></div>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-wrapper">
+              <nav class="header__main-menu main-menu">
+                <ul class="main-menu__list">
+                  <li class="main-menu__item"><a class="main-menu__link main-menu__link_current" href="#"><span>Главная</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#"><span>Новости</span></a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#"><span>Контакты</span></a></li>
+                </ul>
+              </nav>
+              <div class="header__userbalance userbalance"><a class="userbalance__lk-link" href="#">
+                  <div class="userbalance__user">
+                    <div class="userbalance__icon">
+                      <svg class="userbalance__svg" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path class="userbalance__svg-part" d="M19.75,15.67a6,6,0,1,0-7.51,0A11,11,0,0,0,5,26v1H27V26A11,11,0,0,0,19.75,15.67ZM12,11a4,4,0,1,1,4,4A4,4,0,0,1,12,11ZM7.06,25a9,9,0,0,1,17.89,0Z"></path>
+                      </svg>
+                    </div>
+                    <div class="userbalance__username"><span>Станислав</span></div>
+                  </div>
+                  <div class="userbalance__balance"><span>Баланс: </span><span class="userbalance__balance-summ">100000 рублей</span></div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-wrapper"><span class="header__logo logo">Крым<br>авто партс</span>
+              <div class="header__contacts-and-search">
+                <div class="header__contacts contacts">
+                  <ul class="contacts__list">
+                    <li class="contacts__item"><a class="contacts__link" href="#"> 
+                        <div class="contacts__icon">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 477.156 477.156" style="enable-background:new 0 0 477.156 477.156;" xml:space="preserve">
+                            <g>
+                              <path class="contacts__svg-part" d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031              l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656              l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659              C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781              c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938              C474.946,420.878,480.571,397.035,475.009,380.316z"></path>
+                            </g>
+                          </svg>
+                        </div><span class="contacts__text">+79788189082</span></a></li>
+                    <li class="contacts__item"><a class="contacts__link" href="#"> 
+                        <div class="contacts__icon">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <g>
+                              <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                <path class="contacts__svg-part" d="M1232.5,3694.7c-465.2-26.9-813.1-253.7-1016.8-665.1c-123-248-119.2-107.6-113.4-2979.4l5.8-2610.3l51.9-144.2c124.9-340.2,403.7-617,742-734.3l128.8-44.2h3979h3979l132.6,51.9c349.8,142.2,601.6,397.9,726.6,745.8l44.2,125l5.8,2610.3c5.8,2871.8,9.6,2733.4-113.4,2983.3c-155.7,317.2-438.3,545.9-782.3,634.3c-109.6,28.8-486.3,32.7-3844.4,34.6C3110.5,3704.3,1344,3700.4,1232.5,3694.7z M8419.6,2779.7c-1.9-26.9-3337-2379.7-3367.7-2377.8C5025,403.9,1886,2766.2,1886,2785.5c0,3.8,1470.5,7.7,3267.7,7.7C6951,2793.2,8421.5,2787.4,8419.6,2779.7z M3024,765.2C4121.6-65.2,5026.9-743.7,5036.5-743.7c11.5,0,899.6,626.7,1976,1389.8l1956.8,1391.7l5.8-2222.1c3.8-2122.1,1.9-2224-30.8-2268.2c-19.2-26.9-59.6-65.4-88.4-86.5l-51.9-40.4H5000H1196l-51.9,40.4c-28.8,21.1-71.1,63.4-92.3,92.3c-40.4,51.9-40.4,63.4-46.1,2387.4c-1.9,1284,1.9,2333.6,9.6,2333.6C1024.9,2274.2,1928.3,1595.6,3024,765.2z"></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div><span class="contacts__text">workincbox@gmail.com</span></a></li>
+                    <li class="contacts__item"><a class="contacts__link" href="#"> 
+                        <div class="contacts__icon">
+                          <svg class="bi bi-geo-alt-fill" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path class="contacts__svg-part" fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                          </svg>
+                        </div><span class="contacts__text">Симферополь</span></a></li>
+                  </ul>
+                </div>
+                <div class="header__search search">
+                  <div class="search__text-field">
+                    <input class="search__text-input" type="text" name="" placeholder="Введите код запчасти или VIN автомобиля">
+                  </div>
+                  <button class="search__btn">Поиск</button>
+                </div>
+              </div><a class="header__cart-link cart-link" href="#">
+                <div class="cart-link__icon">
+                  <svg class="cart-link__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 902.86 902.86" style="enable-background:new 0 0 902.86 902.86;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path class="cart-link__svg-part" d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z          M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z"></path>
+                        <path class="cart-link__svg-part" d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717          c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744          c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742          C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744          c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z          M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742          S619.162,694.432,619.162,716.897z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <div class="cart-link__quantity"><span>3</span></div>
+                </div>
+                <div class="cart-link__description">
+                  <div> <b>корзина </b><br>на сумму: </div>
+                  <div class="cart-link__summ">15000 рублей</div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__underbottom">
+          <div class="container">
+            <div class="header__part-type-menu part-type-menu">
+              <div class="part-type-menu__hamburger">
+                <label class="part-type-menu__hamburger-switch" for="part-type-menu__list-checkbox">
+                  <div class="part-type-menu__hamburger-icon">
+                    <svg class="part-type-menu__hamburger-svg" id="Слой_1" style="enable-background:new 0 0 139 139;" version="1.1" viewbox="0 0 139 139" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <style type="text/css">.st0{fill:none;stroke:#0e3365;stroke-width:6;stroke-miterlimit:10;}</style>
+                      <line class="part-type-menu__hamburger-svg-line part-type-menu__hamburger-svg-line_top" x1="26.5" x2="112.5" y1="46.3" y2="46.3"></line>
+                      <line class="part-type-menu__hamburger-svg-line part-type-menu__hamburger-svg-line_middle" x1="26.5" x2="112.5" y1="92.7" y2="92.7"></line>
+                      <line class="part-type-menu__hamburger-svg-line part-type-menu__hamburger-svg-line_bottom" x1="26.5" x2="112.5" y1="69.5" y2="69.5"></line>
+                    </svg>
+                  </div>
+                </label>
+              </div>
+              <input class="part-type-menu__list-checkbox" id="part-type-menu__list-checkbox" type="checkbox" name="part-type-menu__list-checkbox">
+              <ul class="part-type-menu__list">
+                <li class="part-type-menu__item"><a class="part-type-menu__link" href="#">Шины</a></li>
+                <li class="part-type-menu__item"><a class="part-type-menu__link" href="#">Масла</a></li>
+                <li class="part-type-menu__item"><a class="part-type-menu__link" href="#">Лампы</a></li>
+                <li class="part-type-menu__item"><a class="part-type-menu__link" href="#">Аксессуары</a></li>
+                <li class="part-type-menu__item"><a class="part-type-menu__link" href="#">Аккумуляторы</a></li>
+                <li class="part-type-menu__item"><a class="part-type-menu__link" href="#">Запчасти для ТО</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="introduction">
+          <div class="introduction__wide-slider wide-slider">
+            <div class="wide-slider__track glide__track" data-glide-el="track">
+              <ul class="wide-slider__list glide__slides">
+                <li class="wide-slider__item glide__slide"><a class="wide-slider__link" href="#"> <img class="wide-slider__img" src="assets/images/wide-slider/slide1.jpg" th:src="@{/images/wide-slider/slide1.jpg}">
+                    <h2 class="wide-slider__title">АВТОЗАПЧАСТИ ДЛЯ ИНОМАРОК В НАЛИЧИИ И ПОД ЗАКАЗ</h2></a></li>
+                <li class="wide-slider__item glide__slide"><a class="wide-slider__link" href="#"> <img class="wide-slider__img" src="assets/images/wide-slider/slide2.jpg" th:src="@{/images/wide-slider/slide2.jpg}" alt="">
+                    <h2 class="wide-slider__title wide-slider__title_red">НИЗКИЕ ЦЕНЫ, БОЛЬШОЙ ВЫБОР, БЫСТРАЯ ДОСТАВКА</h2></a></li>
+              </ul>
+            </div>
+            <div class="wide-slider__controls" data-glide-el="controls">
+              <btn class="wide-slider__arrow wide-slider__arrow_left" data-glide-dir="&lt;">
+                <svg class="wide-slider__arrow-svg" style="enable-background:new 0 0 16.655 27.512;" version="1.1" viewbox="0 0 16.655 27.512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="wide-slider__svg-part" d="M16.655,1.512L15.345,0l-15,13C0.126,13.19,0,13.466,0,13.756s0.126,0.565,0.345,0.756l15,13L16.655,26L2.527,13.756  L16.655,1.512z"></path>
+                </svg>
+              </btn>
+              <btn class="wide-slider__arrow wide-slider__arrow_right" data-glide-dir="&gt;">
+                <svg class="wide-slider__arrow-svg" style="enable-background:new 0 0 16.655 27.512;" version="1.1" viewbox="0 0 16.655 27.512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="wide-slider__svg-part" d="M16.655,1.512L15.345,0l-15,13C0.126,13.19,0,13.466,0,13.756s0.126,0.565,0.345,0.756l15,13L16.655,26L2.527,13.756  L16.655,1.512z"></path>
+                </svg>
+              </btn>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="container">
+            <h2 class="partners__title">Наши партнёры</h2>
+            <div class="partners__wrapper">
+              <div class="partners__item">
+                <div class="partners__partners-slider partners-slider partners-slider_auto">
+                  <div class="partners-slider__track glide__track" data-glide-el="track">
+                    <ul class="partners-slider__list glide__slides">
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/audi_logo_for_slide.png" th:src="@{/images/partners/audi_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/bentley_logo_for_slide.png" th:src="@{/images/partners/bentley_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/bmw_logo_for_slide.png" th:src="@{/images/partners/bmw_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/ford_logo_for_slide.png" th:src="@{/images/partners/ford_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/hyundai_logo_for_slide.png" th:src="@{/images/partners/hyundai_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/jaguar_logo_for_slide.png" th:src="@{/images/partners/jaguar_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/kia_logo_for_slide.png" th:src="@{/images/partners/kia_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/land_rover_logo_for_slide.png" th:src="@{/images/partners/land_rover_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/lexus_logo_for_slide.png" th:src="@{/images/partners/lexus_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/mazda_logo_for_slide.png" th:src="@{/images/partners/mazda_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/mercedes-benz_logo_for_slide.png" th:src="@{/images/partners/mercedes-benz_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/Mitsubishi_logo_for_slide.png" th:src="@{/images/partners/Mitsubishi_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/nissan_logo_for_slide.png" th:src="@{/images/partners/nissan_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/renault_logo_for_slide.png" th:src="@{/images/partners/renault_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/skoda_logo_for_slide.png" th:src="@{/images/partners/skoda_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/smart_logo_for_slide.png" th:src="@{/images/partners/smart_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/toyota_logo_for_slide.png" th:src="@{/images/partners/toyota_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/volkswagen_logo_for_slide.png" th:src="@{/images/partners/volkswagen_logo_for_slide.png}" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="partners-slider__controls" data-glide-el="controls">
+                    <btn class="partners-slider__arrow partners-slider__arrow_left" data-glide-dir="&lt;">
+                      <svg class="partners-slider__arrow-svg" style="enable-background:new 0 0 16.655 27.512;" version="1.1" viewbox="0 0 16.655 27.512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="partners-slider__svg-part" d="M16.655,1.512L15.345,0l-15,13C0.126,13.19,0,13.466,0,13.756s0.126,0.565,0.345,0.756l15,13L16.655,26L2.527,13.756  L16.655,1.512z"></path>
+                      </svg>
+                    </btn>
+                    <btn class="partners-slider__arrow partners-slider__arrow_right" data-glide-dir="&gt;">
+                      <svg class="partners-slider__arrow-svg" style="enable-background:new 0 0 16.655 27.512;" version="1.1" viewbox="0 0 16.655 27.512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="partners-slider__svg-part" d="M16.655,1.512L15.345,0l-15,13C0.126,13.19,0,13.466,0,13.756s0.126,0.565,0.345,0.756l15,13L16.655,26L2.527,13.756  L16.655,1.512z"></path>
+                      </svg>
+                    </btn>
+                  </div>
+                </div>
+              </div>
+              <div class="partners__item">
+                <div class="partners__partners-slider partners-slider partners-slider_oil">
+                  <div class="partners-slider__track glide__track" data-glide-el="track">
+                    <ul class="partners-slider__list glide__slides">
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/3m_logo_for_slide.png" th:src="@{/images/partners/3m_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/grass_logo_for_slide.png" th:src="@{/images/partners/grass_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/henkel_logo_for_slide.png" th:src="@{/images/partners/henkel_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/loctite_logo_for_slide.png" th:src="@{/images/partners/loctite_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/LRoss_logo_for_slide.png" th:src="@{/images/partners/LRoss_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/lukoil_logo_for_slide.png" th:src="@{/images/partners/lukoil_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/mahle_logo_for_slide.png" th:src="@{/images/partners/mahle_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/ppg_logo_for_slide.png" th:src="@{/images/partners/ppg_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/shell_logo_for_slide.png" th:src="@{/images/partners/shell_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/spies-hecker_logo_for_slide.png" th:src="@{/images/partners/spies-hecker_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/standox_logo_for_slide.png" th:src="@{/images/partners/standox_logo_for_slide.png}" alt=""></a></li>
+                      <li class="partners-slider__item glide__slide"><a class="partners-slider__link" href="#"><img class="partners-slider__img" src="assets/images/partners/wurth_logo_for_slide.png" th:src="@{/images/partners/wurth_logo_for_slide.png}" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="partners-slider__controls" data-glide-el="controls">
+                    <btn class="partners-slider__arrow partners-slider__arrow_left" data-glide-dir="&lt;">
+                      <svg class="partners-slider__arrow-svg" style="enable-background:new 0 0 16.655 27.512;" version="1.1" viewbox="0 0 16.655 27.512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="partners-slider__svg-part" d="M16.655,1.512L15.345,0l-15,13C0.126,13.19,0,13.466,0,13.756s0.126,0.565,0.345,0.756l15,13L16.655,26L2.527,13.756  L16.655,1.512z"></path>
+                      </svg>
+                    </btn>
+                    <btn class="partners-slider__arrow partners-slider__arrow_right" data-glide-dir="&gt;">
+                      <svg class="partners-slider__arrow-svg" style="enable-background:new 0 0 16.655 27.512;" version="1.1" viewbox="0 0 16.655 27.512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="partners-slider__svg-part" d="M16.655,1.512L15.345,0l-15,13C0.126,13.19,0,13.466,0,13.756s0.126,0.565,0.345,0.756l15,13L16.655,26L2.527,13.756  L16.655,1.512z"></path>
+                      </svg>
+                    </btn>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news">
+          <div class="container">
+            <h2 class="news__title">Новости</h2>
+            <div class="news__newsfeed newsfeed">
+              <ul class="newsfeed__list">
+                <li class="newsfeed__item"><a class="newsfeed__link" href="#"> 
+                    <div class="newsfeed__pic"><img class="newsfeed__img" src="assets/images/news/oils.jpg" th:src="@{/images/news/oils.jpg}" alt=""></div>
+                    <div class="newsfeed__desc">
+                      <div class="newsfeed__meta">
+                        <div class="newsfeed__date"><span>4 дня назад</span></div>
+                        <div class="newsfeed__type"><span>тестовый</span></div>
+                      </div>
+                      <div class="newsfeed__title">
+                        <h3>Lorem ipsum dolor sit</h3>
+                      </div>
+                      <div class="newsfeed__text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium porro dolore necessitatibus recusandae repudiandae tempore atque quia accusamus numquam laborum ex itaque ipsam doloribus, sint minus quaerat voluptatem consequatur? Nostrum?</p>
+                      </div>
+                    </div></a></li>
+                <li class="newsfeed__item"><a class="newsfeed__link" href="#"> 
+                    <div class="newsfeed__pic"><img class="newsfeed__img" src="assets/images/news/oils.jpg" th:src="@{/images/news/oils.jpg}" alt=""></div>
+                    <div class="newsfeed__desc">
+                      <div class="newsfeed__meta">
+                        <div class="newsfeed__date"><span>4 дня назад</span></div>
+                        <div class="newsfeed__type"><span>тестовый</span></div>
+                      </div>
+                      <div class="newsfeed__title">
+                        <h3>Lorem ipsum dolor sit</h3>
+                      </div>
+                      <div class="newsfeed__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est consectetur rerum amet unde ipsa ut blanditiis laudantium dicta, veniam quisquam accusamus placeat eveniet nemo sit sunt labore eum! Reiciendis!Nulla, aliquid quibusdam atque, numquam autem culpa dignissimos reiciendis modi sed dolorum, impedit provident libero ea? Vero provident explicabo unde ipsa cupiditate quidem, at beatae sint tempora obcaecati enim quam!</p>
+                      </div>
+                    </div></a></li>
+                <li class="newsfeed__item"><a class="newsfeed__link" href="#"> 
+                    <div class="newsfeed__pic"><img class="newsfeed__img" src="assets/images/news/oils.jpg" th:src="@{/images/news/oils.jpg}" alt=""></div>
+                    <div class="newsfeed__desc">
+                      <div class="newsfeed__meta">
+                        <div class="newsfeed__date"><span>4 дня назад</span></div>
+                        <div class="newsfeed__type"><span>тестовый</span></div>
+                      </div>
+                      <div class="newsfeed__title">
+                        <h3>Lorem ipsum dolor sit</h3>
+                      </div>
+                      <div class="newsfeed__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui cum quam recusandae laudantium, necessitatibus, unde fugit, temporibus quae ullam similique rem rerum minus iure. Veniam at expedita obcaecati doloremque!</p>
+                      </div>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div th:insert="footer.html">
+
+    </div>
+  </body>
+  <script src="assets/js/vendor.min.js" th:src="@{/js/vendor.min.js}"></script>
+  <script src="assets/js/main.js" th:src="@{/js/main.js}"></script>
+</html>
